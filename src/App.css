@@ -1,0 +1,56 @@
+.board.disabled {
+  pointer-events: none;
+}
+
+.board.disabled .panel:hover {
+  background-color: initial;
+}
+
+.board.disabled .panel {
+  cursor: not-allowed;
+}
+
+.row {
+  display: flex;
+}
+
+.panel {
+  border: 1px solid whitesmoke;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.panel:hover {
+  background-color: dimgray;
+}
+
+.panel.selected:hover {
+  background-color: initial;
+}
+.panel.selected {
+  cursor: not-allowed;
+}
+
+.panel.match {
+  background-color: chartreuse;
+}
+
+.turn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.turn svg {
+  width: 20px;
+}
+
+.winner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.winner svg {
+  width: 20px;
+}
